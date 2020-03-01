@@ -1,0 +1,53 @@
+/* --- FONTS --- */
+@font-face {
+  font-family: "gl";
+  src: url("../fonts/Gotham-Light.woff2") format("woff2"), url("./fonts/Gotham-Light.woff") format("woff");
+}
+@font-face {
+  font-family: "gm";
+  src: url("../fonts/gotham-medium.woff2") format("woff2"), url("./fonts/gotham-medium.woff") format("woff");
+}
+/* --- GENERALE --- */
+body{
+  padding: 0 10%;
+  background: #fefef;
+  color: #030303;
+  padding-top: 10%;
+  font-family: 'gl';
+}
+h1, h2, h3{
+  font-family: 'gm';
+  text-transform: uppercase;
+  margin-top: 80px;
+}
+h1{
+  font-size: 22px;
+  width: 100%;
+  text-align: center;
+  letter-spacing: -1px;
+  margin-bottom: 100px;
+}
+h2{
+  font-size: 20px;
+}
+
+p{
+  text-align: justify;
+}
+ul li{
+  line-height: 23px;
+  list-style: none;
+  margin-bottom: 10px;
+}
+li span {
+  display: block;
+  font-family: 'gm';
+}
+.wrapper--illustration{
+  margin: 50px auto;
+  max-width: 80%;
+}
+
+.wrapper--illustration img {
+  width: 100%;
+}

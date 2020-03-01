@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Argumentaire d'expertise front-end RAMASSAMY Lucien</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <h1>Argumentaire d'expertise front-end RAMASSAMY Lucien</h1>
+  <h2>Projet 1er semestre Groupe 8</h2>
+  <ul>
+    <li> <span>Problematique:</span> Comment rendre la ville de Paris plus " SMART City " en vu des JO 2024.</li>
+    <li> <span>Solution proposer:</span> Un site internet a disposition des professionelles pour les aider a la prise de décision dans l'habilitation des transports en commun pour les personnes en situation d'handicap. </li>
+    <li> <span>Format attendus: </span> Datavisualition sur site internet.</li>
+    <li>
+      <span>Membre du groupe/poste:</span>
+      Designer Cassandra DOUX <br>
+      Designer Lucas CUNAULT <br>
+      Designer Mohamed Karoui <br>
+      Developpeur Back-end Samir CHALAL <br>
+      Developpeur Front-end Lucien RAMASSAMY
+    </li>
+  </ul>
+  <h2>Solution </h2>
+  <p>
+    Pour ce projet notre groupe a décidé de mettre en place un site BtoB "STAVO" qui aiderait à la prise de décision les professionnelles qui sont en charge de l'habilitation des transports en commun pour les personnes en situation d'handicap en vue des JO Paris 2024.
+  </p>
+  <p>
+    L'outil principal de notre projet est une carte interactive qui permet d'avoirs accès aux données nécessaires pour prioriser les travaux en prenant en compte des paramètres tel que l'affluence d'une station de métro, sa position par rapport à un lieu d'épreuves, son nom et sa ligne.
+  </p>
+  <p> Elle devait permettre de filtrer les différents transports selon leur accessibilité, non-accésibilitées, état de travaux </p>
+  <div class="wrapper--illustration">
+    <img src="./assets/carte.png" alt="carte interactive">
+  </div>
+  <P>Pour développer cette solution en mettant de cote la contrainte de design imposer par les Designer il m'était imposé de travailler avec le framwork react js</P>
+  <h3>React.js</h3>
+  <p>React js est un Framwork Javascript qui permet de développer des SPA ( Single Page Aplication) ce sont des applications web utilisant des DOM virtuel et un system de rootage qui appelle l'affichage d'un composant lors de la demande de l'utilisateur en simulant une transition vers une nouvelle page de qui permet d'optimiser les performances d'un site internet.</p>
+  <div class="wrapper--illustration">
+    <img src="/assets/react.png" alt="image du site react">
+  </div>
+  <h3>google-maps-react</h3>
+  <p>
+    Pour développer l'outil de carte interactive j'ai utilisé la librairie googlent maps react.
+  </p>
+  <p>
+    J'ai choisi cette librarie car google a une grosse documentation et je savais que je pourrais trouver les informations nécessaires à la compréhension de l'API google.
+  </p>
+  <div class="wrapper--illustration">
+    <img src="./assets/google-maps.png" alt="site npm de la librarie google-maps-react">
+  </div>
+  <p> En complement de la carte j'ai dû développer une fonctionnaliser permettant à l'utilisateur de sélectionner le point de départ sur la carte parmi les lieux qui accueillent une épreuve ou plus des JO, ma fonction est une boucle ". map" qui passe sur chaque objet du tableau transmit par le développeur back-end et affiche par item de ce tableau une div en forme de " carte " comprenent le nom du lieu, une image de ce lieu et le nombre de spectateurs ainsi que les coordonnées géographiques de ce lieu.  </p>
+  <p>Aux cliques de l'utilisateur les données sont transmises via des propos à un hook "useState" qui va mettre à jour les valeurs de longitude et de latitude du lieu choisie au niveau de la carte interactive.</p>
+  <div class="wrapper--illustration">
+    <img src="./assets/lieu.png" alt="selection du point de depart">
+  </div>
+  <p>Néanmoins sur la version actuelle ma fonction ne met pas à jour les données de position initiale de la carte donc des coordonnées son mises en BRUT</p>
+  <h3>Bootstrap</h3>
+  <p>Pour accompagner la map interactive j'ai dû intégrer d'autres pages d'informations, page d'accueil et page de contact.</p>
+  <p>J'ai utilise la librairie Bootstrap pour mon intégration car elle me permettait d'avoir un reset Css est un accès à des classes de style Css intéressantes</p>
+  <div class="wrapper--illustration">
+    <img src="./assets/homePage.png" alt="page d'acceuil">
+  </div>
+  <p>La cible de ce site étant les professionnelles nous n'avions pas de besoin de développer un site responsive car les professionnels travails avec des appareils de minimums 13 pouces de dimensions d'écrans</p>
+  <h3>Greensock</h3>
+  <p>Pour dynamiser le site j'ai utilisé la librairie d'animation Greensock, je l'ai choisis car j'ai l'habitude de travailler avec.</p>
+  <p>Elle m'a été utile pour dérouler le menu de filtre de la carte interactive ou pour créer une intro à la page d'accueil</p>
+  <div class="wrapper--illustration">
+    <img src="./assets/greensock.png" alt="site greensock">
+  </div>
+  <p>Fin de l'argumentaire</p>
+</body>
+</html>
